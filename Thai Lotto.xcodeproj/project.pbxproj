@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD15EFA3159078C00041C535 /* SpinnerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD15EFA2159078C00041C535 /* SpinnerView.m */; };
+		DD31F4571592238C003DF0FF /* MTL_CheckNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = DD31F4561592238C003DF0FF /* MTL_CheckNumber.m */; };
+		DD31F45A15922485003DF0FF /* MTL_SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD31F45915922485003DF0FF /* MTL_SearchViewController.m */; };
+		DD6E20951588AB190068941A /* MTL_HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6E20941588AB190068941A /* MTL_HistoryViewController.m */; };
+		DD7A4355158E2A9300E90118 /* MTL_LotteryResult.m in Sources */ = {isa = PBXBuildFile; fileRef = DD7A4354158E2A9300E90118 /* MTL_LotteryResult.m */; };
+		DD8607001590B6BE003C1801 /* MTL_CurrentDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD8606FF1590B6BE003C1801 /* MTL_CurrentDrawViewController.m */; };
+		DD91C29E15921238006CC12E /* MTL_HistoryCellViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD91C29D15921238006CC12E /* MTL_HistoryCellViewCell.m */; };
+		DD9C4973157F8B00009A09FA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C4972157F8B00009A09FA /* UIKit.framework */; };
+		DD9C4975157F8B00009A09FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C4974157F8B00009A09FA /* Foundation.framework */; };
+		DD9C4977157F8B00009A09FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9C4976157F8B00009A09FA /* CoreGraphics.framework */; };
+		DD9C497D157F8B00009A09FA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DD9C497B157F8B00009A09FA /* InfoPlist.strings */; };
+		DD9C497F157F8B00009A09FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C497E157F8B00009A09FA /* main.m */; };
+		DD9C4983157F8B00009A09FA /* MTL_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD9C4982157F8B00009A09FA /* MTL_AppDelegate.m */; };
+		DD9C4986157F8B00009A09FA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD9C4984157F8B00009A09FA /* MainStoryboard.storyboard */; };
+		DDC84E66158A3A8300DEC1EB /* MTL_dateList.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC84E65158A3A8300DEC1EB /* MTL_dateList.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DD15EFA1159078C00041C535 /* SpinnerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpinnerView.h; sourceTree = "<group>"; };
+		DD15EFA2159078C00041C535 /* SpinnerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpinnerView.m; sourceTree = "<group>"; };
+		DD31F4551592238C003DF0FF /* MTL_CheckNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTL_CheckNumber.h; sourceTree = "<group>"; };
+		DD31F4561592238C003DF0FF /* MTL_CheckNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTL_CheckNumber.m; sourceTree = "<group>"; };
+		DD31F45815922485003DF0FF /* MTL_SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTL_SearchViewController.h; sourceTree = "<group>"; };
+		DD31F45915922485003DF0FF /* MTL_SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTL_SearchViewController.m; sourceTree = "<group>"; };
+		DD6E20931588AB190068941A /* MTL_HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTL_HistoryViewController.h; sourceTree = "<group>"; };
+		DD6E20941588AB190068941A /* MTL_HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTL_HistoryViewController.m; sourceTree = "<group>"; };
+		DD7A4353158E2A9300E90118 /* MTL_LotteryResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTL_LotteryResult.h; sourceTree = "<group>"; };
+		DD7A4354158E2A9300E90118 /* MTL_LotteryResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTL_LotteryResult.m; sourceTree = "<group>"; };
+		DD8606FE1590B6BE003C1801 /* MTL_CurrentDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTL_CurrentDrawViewController.h; sourceTree = "<group>"; };
+		DD8606FF1590B6BE003C1801 /* MTL_CurrentDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTL_CurrentDrawViewController.m; sourceTree = "<group>"; };
+		DD91C29C15921238006CC12E /* MTL_HistoryCellViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTL_HistoryCellViewCell.h; sourceTree = "<group>"; };
+		DD91C29D15921238006CC12E /* MTL_HistoryCellViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTL_HistoryCellViewCell.m; sourceTree = "<group>"; };
+		DD9C496E157F8B00009A09FA /* Thai Lotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Thai Lotto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD9C4972157F8B00009A09FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DD9C4974157F8B00009A09FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DD9C4976157F8B00009A09FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DD9C497A157F8B00009A09FA /* Thai Lotto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Thai Lotto-Info.plist"; sourceTree = "<group>"; };
+		DD9C497C157F8B00009A09FA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DD9C497E157F8B00009A09FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD9C4980157F8B00009A09FA /* Thai Lotto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Thai Lotto-Prefix.pch"; sourceTree = "<group>"; };
+		DD9C4981157F8B00009A09FA /* MTL_AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTL_AppDelegate.h; sourceTree = "<group>"; };
+		DD9C4982157F8B00009A09FA /* MTL_AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTL_AppDelegate.m; sourceTree = "<group>"; };
+		DD9C4985157F8B00009A09FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DDC84E64158A3A8300DEC1EB /* MTL_dateList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTL_dateList.h; sourceTree = "<group>"; };
+		DDC84E65158A3A8300DEC1EB /* MTL_dateList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTL_dateList.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD9C496B157F8B00009A09FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9C4973157F8B00009A09FA /* UIKit.framework in Frameworks */,
+				DD9C4975157F8B00009A09FA /* Foundation.framework in Frameworks */,
+				DD9C4977157F8B00009A09FA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD9C4963157F8AFF009A09FA = {
+			isa = PBXGroup;
+			children = (
+				DD9C4978157F8B00009A09FA /* Thai Lotto */,
+				DD9C4971157F8B00009A09FA /* Frameworks */,
+				DD9C496F157F8B00009A09FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD9C496F157F8B00009A09FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C496E157F8B00009A09FA /* Thai Lotto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD9C4971157F8B00009A09FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C4972157F8B00009A09FA /* UIKit.framework */,
+				DD9C4974157F8B00009A09FA /* Foundation.framework */,
+				DD9C4976157F8B00009A09FA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DD9C4978157F8B00009A09FA /* Thai Lotto */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C4981157F8B00009A09FA /* MTL_AppDelegate.h */,
+				DD9C4982157F8B00009A09FA /* MTL_AppDelegate.m */,
+				DD9C4984157F8B00009A09FA /* MainStoryboard.storyboard */,
+				DD9C4979157F8B00009A09FA /* Supporting Files */,
+				DDC84E64158A3A8300DEC1EB /* MTL_dateList.h */,
+				DDC84E65158A3A8300DEC1EB /* MTL_dateList.m */,
+				DD7A4353158E2A9300E90118 /* MTL_LotteryResult.h */,
+				DD7A4354158E2A9300E90118 /* MTL_LotteryResult.m */,
+				DD31F4551592238C003DF0FF /* MTL_CheckNumber.h */,
+				DD31F4561592238C003DF0FF /* MTL_CheckNumber.m */,
+				DD8606FE1590B6BE003C1801 /* MTL_CurrentDrawViewController.h */,
+				DD8606FF1590B6BE003C1801 /* MTL_CurrentDrawViewController.m */,
+				DD6E20931588AB190068941A /* MTL_HistoryViewController.h */,
+				DD6E20941588AB190068941A /* MTL_HistoryViewController.m */,
+				DD91C29C15921238006CC12E /* MTL_HistoryCellViewCell.h */,
+				DD91C29D15921238006CC12E /* MTL_HistoryCellViewCell.m */,
+				DD31F45815922485003DF0FF /* MTL_SearchViewController.h */,
+				DD31F45915922485003DF0FF /* MTL_SearchViewController.m */,
+				DD15EFA1159078C00041C535 /* SpinnerView.h */,
+				DD15EFA2159078C00041C535 /* SpinnerView.m */,
+			);
+			path = "Thai Lotto";
+			sourceTree = "<group>";
+		};
+		DD9C4979157F8B00009A09FA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C497A157F8B00009A09FA /* Thai Lotto-Info.plist */,
+				DD9C497B157F8B00009A09FA /* InfoPlist.strings */,
+				DD9C497E157F8B00009A09FA /* main.m */,
+				DD9C4980157F8B00009A09FA /* Thai Lotto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD9C496D157F8B00009A09FA /* Thai Lotto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD9C4997157F8B00009A09FA /* Build configuration list for PBXNativeTarget "Thai Lotto" */;
+			buildPhases = (
+				DD9C496A157F8B00009A09FA /* Sources */,
+				DD9C496B157F8B00009A09FA /* Frameworks */,
+				DD9C496C157F8B00009A09FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Thai Lotto";
+			productName = "Thai Lotto";
+			productReference = DD9C496E157F8B00009A09FA /* Thai Lotto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD9C4965157F8AFF009A09FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MTL_;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Foster Wheeler International Corporation.";
+			};
+			buildConfigurationList = DD9C4968157F8AFF009A09FA /* Build configuration list for PBXProject "Thai Lotto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DD9C4963157F8AFF009A09FA;
+			productRefGroup = DD9C496F157F8B00009A09FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD9C496D157F8B00009A09FA /* Thai Lotto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD9C496C157F8B00009A09FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9C497D157F8B00009A09FA /* InfoPlist.strings in Resources */,
+				DD9C4986157F8B00009A09FA /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD9C496A157F8B00009A09FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD9C497F157F8B00009A09FA /* main.m in Sources */,
+				DD9C4983157F8B00009A09FA /* MTL_AppDelegate.m in Sources */,
+				DD6E20951588AB190068941A /* MTL_HistoryViewController.m in Sources */,
+				DDC84E66158A3A8300DEC1EB /* MTL_dateList.m in Sources */,
+				DD7A4355158E2A9300E90118 /* MTL_LotteryResult.m in Sources */,
+				DD15EFA3159078C00041C535 /* SpinnerView.m in Sources */,
+				DD8607001590B6BE003C1801 /* MTL_CurrentDrawViewController.m in Sources */,
+				DD91C29E15921238006CC12E /* MTL_HistoryCellViewCell.m in Sources */,
+				DD31F4571592238C003DF0FF /* MTL_CheckNumber.m in Sources */,
+				DD31F45A15922485003DF0FF /* MTL_SearchViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DD9C497B157F8B00009A09FA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9C497C157F8B00009A09FA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DD9C4984157F8B00009A09FA /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD9C4985157F8B00009A09FA /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD9C4995157F8B00009A09FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD9C4996157F8B00009A09FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD9C4998157F8B00009A09FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Thai Lotto/Thai Lotto-Prefix.pch";
+				INFOPLIST_FILE = "Thai Lotto/Thai Lotto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DD9C4999157F8B00009A09FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Thai Lotto/Thai Lotto-Prefix.pch";
+				INFOPLIST_FILE = "Thai Lotto/Thai Lotto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD9C4968157F8AFF009A09FA /* Build configuration list for PBXProject "Thai Lotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9C4995157F8B00009A09FA /* Debug */,
+				DD9C4996157F8B00009A09FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD9C4997157F8B00009A09FA /* Build configuration list for PBXNativeTarget "Thai Lotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD9C4998157F8B00009A09FA /* Debug */,
+				DD9C4999157F8B00009A09FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD9C4965157F8AFF009A09FA /* Project object */;
+}
