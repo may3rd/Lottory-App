@@ -207,6 +207,49 @@
     }
 }
 
+-(void)loadMoreResult:(int)count
+{
+        int n = [dateList count];
+        int i;
+
+        alertView = [[UIAlertView alloc] initWithTitle:@"Loading data"
+                                               message:@"\n"
+                                              delegate:self
+                                     cancelButtonTitle:nil
+                                     otherButtonTitles:nil];
+        UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        spinner.center = CGPointMake(139.5, 75.5); // .5 so it doesn't blur
+        [alertView addSubview:spinner];
+        [spinner startAnimating]        
+
+
+        [dateList addDateCount:count];
+        
+        for (i = n; i < [dateList count]; i++)
+        {
+            MTL_LotteryResult * result = [[MTL_LotteryResult alloc] initWithDate:[dateList objectAtIndex:i]];
+
+            if (result = nil)
+            {
+                //alert user to check internet connection
+                [alertView dismissWithClickedButtonIndex:0 animated:YES];
+                UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Loading data : Error"
+                                                                 message:@"Please check internet connection."
+                                                                delegate:nil
+                                                       cancelButtonTitle:@"Dismiss"
+                                                       otherButtonTitles:nil];
+                [alert show];
+                [tableView reloadData];
+                return;
+            }
+            [resultArray addObject:result];
+        }
+        
+        [tableView reloadData];
+        
+        [alertView dismissWithClickedButtonIndex:0 animated:YES];
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"HistoryDetail"])
