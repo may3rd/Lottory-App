@@ -15,6 +15,7 @@
 @end
 
 @implementation MTL_SearchViewController
+
 @synthesize selectedIndexPath;
 @synthesize numberArray;
 
@@ -36,6 +37,11 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    // Create view in table header
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f - self.tableView.bounds.size.height, self.view.frame.size.width, self.tableView.bounds.size.height)];
+    view.delegate = self;
+    [self setHeaderView:view];
 }
 
 - (void)viewDidUnload
@@ -134,7 +140,7 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-     int index = indexPath.row - 1;			// since first row is menu
+     int index = indexPath.row;			// since first row is menu
      MTL_CheckNumber * checkNumber = [numberArray objectAtIndex:index];
      
      if (!checkNumber.checked)
@@ -174,6 +180,8 @@
 	{
 		[numberArray insertObject:checkNumber atIndex:i];
 	}
+
+    [tableView reloadData];
 }
 
 -(void)checkNumberAll
@@ -183,6 +191,12 @@
 	{
 		[self checkNumberAtIndex:i];
 	}	
+}
+
+-(void)clearAllNumber
+{
+    numberArray = nil;
+    [tableView reloadData];
 }
 
 #pragma mark - UIAlertView delegate
