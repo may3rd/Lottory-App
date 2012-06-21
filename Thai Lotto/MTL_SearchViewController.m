@@ -134,6 +134,24 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+     int index = indexPath.row - 1;			// since first row is menu
+     MTL_CheckNumber * checkNumber = [numberArray objectAtIndex:index];
+     
+     if (!checkNumber.checked)
+     {
+     	// this number is not checked yet : display alert view to warn user to choose
+     }
+     else
+     {
+     	NSString * resultToShow = @"This number is not won any price.";
+     	if (checkNumber.won)
+     	{
+     		// this number is won then change resultToShow to checkNumber.result
+     		resultToShow = checkNumber.result;
+     	}
+     	
+     	// show message
+     }
 }
 
 -(void)checkNumberAtIndex:(int)i
