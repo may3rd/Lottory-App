@@ -30,39 +30,7 @@ NSString *const kXMLReaderTextNodeKey = @"text";
     }
     
     date = date_;
-    
-    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"th_TH"]];
-    
-    [dateFormatter setDateFormat:@"yyyy"];
-    int year = [[dateFormatter stringFromDate:date] intValue];
-        
-    [dateFormatter setDateFormat:@"MM"];
-    int month = [[dateFormatter stringFromDate:date] intValue];
-        
-    [dateFormatter setDateFormat:@"dd"];
-    int day = [[dateFormatter stringFromDate:date] intValue];
-        
-    NSString * urlString = [NSString stringWithFormat:@"http://www.glo.or.th/detail.php?link=result_text&select_round=%04d%02d%02d", year, month, day];
-    
-    // get data from url
-    NSURL * url = [[NSURL alloc] initWithString:urlString];
-    NSData * data = [[NSData alloc] initWithContentsOfURL:url];
-    NSString * string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    
-    self.firstPrice = [self firstPriceFromString:string];
-    self.firstNextPrice = [self firstNextPriceFromString:string];
-    self.secondPrice = [self secondPriceFromString:string];
-    self.thirdPrice = [self thirdPriceFromString:string];
-    self.forthPrice = [self forthPriceFromString:string];
-    self.fifthPrice = [self fifthPriceFromString:string];
-    self.threeNumberPrice = [self threeNumberFromString:string];
-    self.twoNumberPrice = [self twoNumberFromString:string];
-    
-    [dateFormatter setDateFormat:@"d MMMM yyyy"];
-    self.drawDate = [NSString stringWithFormat:@"งวดประจำวันที่ %@", [dateFormatter stringFromDate:date]];
-    
+    [self getRusultFromGLO];
     return self;
 }
 
@@ -72,15 +40,15 @@ NSString *const kXMLReaderTextNodeKey = @"text";
 	if (self)
 	{
 		date = date_;
-        drawDate = drawDate_;
+        	drawDate = drawDate_;
 		firstPrice = firstPrice_;
-        firstNextPrice = firstNext_;
-        secondPrice = secondPrice_;
-        thirdPrice = thirdPrice_;
-        forthPrice = forthPrice_;
-        fifthPrice = fifthPrice_;
-        threeNumberPrice = threeNumber_;
-        twoNumberPrice = twoNumber_;
+        	firstNextPrice = firstNext_;
+        	secondPrice = secondPrice_;
+        	thirdPrice = thirdPrice_;
+        	forthPrice = forthPrice_;
+        	fifthPrice = fifthPrice_;
+        	threeNumberPrice = threeNumber_;
+        	twoNumberPrice = twoNumber_;
 	}
     
 	return self;
@@ -94,11 +62,36 @@ NSString *const kXMLReaderTextNodeKey = @"text";
     
 }
 
--(NSString *)stringFromDrawDate
+-(void)getRusultFromGLO
+{
+    NSString * urlString = [NSString stringWithFormat:@"http://www.glo.or.th/detail.php?link=result_text&select_round=%@",[self stringURLFromDate]];
+    
+    // get data from url
+    NSURL * url = [[NSURL alloc] initWithString:urlString];
+    NSData * data = [[NSData alloc] initWithContentsOfURL:url];
+    NSString * string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+
+    // if any error occurs then return nil
+    if ()
+    {
+        return nil;
+    }
+
+    firstPrice = [self firstPriceFromString:string];
+    firstNextPrice = [self firstNextPriceFromString:string];
+    secondPrice = [self secondPriceFromString:string];
+    thirdPrice = [self thirdPriceFromString:string];
+    forthPrice = [self forthPriceFromString:string];
+    fifthPrice = [self fifthPriceFromString:string];
+    threeNumberPrice = [self threeNumberFromString:string];
+    twoNumberPrice = [self twoNumberFromString:string];
+    drawDate = [self getDrawDate];
+}
+
+-(NSString *)stringURLFromDate
 {
     NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
-    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"th_TH"]];
     
     [dateFormatter setDateFormat:@"yyyy"];
     int year = [[dateFormatter stringFromDate:date] intValue];
@@ -109,7 +102,17 @@ NSString *const kXMLReaderTextNodeKey = @"text";
     [dateFormatter setDateFormat:@"dd"];
     int day = [[dateFormatter stringFromDate:date] intValue];
     
-	return [NSString stringWithFormat:@"%04d%02d%02d", year, month, day];
+    return [NSString stringWithFormat:@"%04d%02d%02d", year, month, day];
+}
+
+-(NSString *)getDrawDate
+{
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"th_TH"]];
+    [dateFormatter setDateFormat:@"d MMMM yyyy"];
+
+    return [NSString stringWithFormat:@"งวดประจำวันที่ %@", [dateFormatter stringFromDate:date]];
 }
 
 -(NSString *)checkNumber:(NSString *)number
