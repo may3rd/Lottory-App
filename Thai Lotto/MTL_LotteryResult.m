@@ -72,10 +72,10 @@ NSString *const kXMLReaderTextNodeKey = @"text";
     NSString * string = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 
     // if any error occurs then return nil
-    if ()
-    {
-        return nil;
-    }
+    //if ()
+    //{
+    //    return nil;
+    //}
 
     firstPrice = [self firstPriceFromString:string];
     firstNextPrice = [self firstNextPriceFromString:string];

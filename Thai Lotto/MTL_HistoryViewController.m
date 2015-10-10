@@ -206,8 +206,8 @@
         [alertView dismissWithClickedButtonIndex:0 animated:YES];
     }
 }
-
--(void)loadMoreResult:(int)count
+/*
+-(void)loadMoreResults:(int)count
 {
         int n = [dateList count];
         int i;
@@ -220,7 +220,7 @@
         UIActivityIndicatorView *spinner = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
         spinner.center = CGPointMake(139.5, 75.5); // .5 so it doesn't blur
         [alertView addSubview:spinner];
-        [spinner startAnimating]        
+        [spinner startAnimating];
 
 
         [dateList addDateCount:count];
@@ -229,7 +229,7 @@
         {
             MTL_LotteryResult * result = [[MTL_LotteryResult alloc] initWithDate:[dateList objectAtIndex:i]];
 
-            if (result = nil)
+            if (result == nil)
             {
                 //alert user to check internet connection
                 [alertView dismissWithClickedButtonIndex:0 animated:YES];
@@ -249,7 +249,7 @@
         
         [alertView dismissWithClickedButtonIndex:0 animated:YES];
 }
-
+*/
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"HistoryDetail"])
